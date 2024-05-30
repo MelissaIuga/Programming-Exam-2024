@@ -1,0 +1,134 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gelasio", serif;
+  background-color: #e9e1da;
+}
+
+a {
+  color: #DC5F00;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a:hover {
+  color: #f6974f;
+}
+
+header {
+  background-color: rgb(38, 76, 89);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+h1{
+  margin-top: 3%;
+  text-align: center;
+  color:#DC5F00;
+}
+
+h4{
+  margin-top: -5%;
+  color: #928174;
+}
+
+.maindesc{
+  text-align: center;
+  color: #928174;
+}
+
+header h1 {
+  color:#373A40;
+  padding: 1em;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  gap: 1em;
+  padding: 2em;
+}
+
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.grid-item {
+  padding: 1.5em;
+  color: #373A40;
+  background-color: #f1f1f1;
+  transition: 0.5s;
+  animation: fadeIn 0.5s;
+  border-radius: 10px;
+}
+
+.grid-item:hover {
+  transform: scale(1.03);
+  background-color: #fee8d7;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+#scroll {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#scroll img {
+  width: 50px;
+  height: 50px;
+}
+
+footer {
+  background-color:#ecd0ba;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about {
+  margin-bottom: 10px; /* to add some space between the about section and the social icons */
+}
+
+footer img {
+  max-width: 100%;
+  margin: 5px;
+}
+
+#footerh2{
+  color:#DC5F00;
+  margin-top: -0.7%;
+  font-size: 100%;
+  font-weight: 200;
+}
