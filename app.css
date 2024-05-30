@@ -13,7 +13,7 @@ a {
 }
 
 a:hover {
-  color: #f6974f;
+  color: #ffa560;
 }
 
 header {
@@ -93,7 +93,7 @@ header h1 {
   }
 }
 
-
+/* code for the scroll to top button */
 #scroll {
   position: fixed;
   bottom: 20px;

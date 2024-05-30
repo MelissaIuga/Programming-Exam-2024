@@ -52,7 +52,6 @@ for (const project of projects) {
       <p><b>Client:</b> ${project.acf.client}</p>
       <p>${project.acf.description}</p>
       ${websiteLink}
-
     </article>
   `
   );
