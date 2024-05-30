@@ -29,7 +29,7 @@ function displayProjectsGrid(projects) {
 
 for (const project of projects) {
 
-    let websiteLink = ''; // init. link variable
+    let websiteLink = ''; // initiate the link variable
     let linkText = 'View Website'; // for the default link text
 
     if (project.acf.link) {
@@ -58,6 +58,7 @@ for (const project of projects) {
 }
 }
 
+ // only show the scroll to top button after the user starts scrolling (event)
 window.addEventListener('scroll', function() {
   const scrollBtn = document.getElementById('scroll');
   if (window.scrollY > 100) {
